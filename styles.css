@@ -1,0 +1,116 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #67597A;
+    color: #CEEDDB;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #544E61;
+    color: #CEEDDB;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #CEEDDB;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+nav ul li a:hover {
+    color: #6E8894; /* Change color on hover */
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #67597A;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #544E61;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #544E61;
+    color: #CEEDDB;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer div a {
+    color: #CEEDDB;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+footer div a:hover {
+    color: #85BAA1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+#about-me .about-me-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+}
+
+#about-me img {
+    width: 150px; /* Set explicit width */
+    height: 150px; /* Set explicit height */
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-me p {
+    flex: 1; /* Ensure the paragraph takes up remaining space */
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
