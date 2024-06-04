@@ -203,9 +203,52 @@ footer div a:hover {
     background-color: #6E8894;
 }
 
-/* Responsive design for contact form */
+/* Interests Page Styles */
+#interests {
+    background-color: #67597A;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interest {
+    display: flex;
+    align-items: center;
+    background-color: #544E61;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interest img {
+    width: 100px; /* Set explicit width for interest images */
+    height: 100px; /* Set explicit height for interest images */
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interest-details {
+    flex: 1; /* Ensure the details take up the remaining space */
+}
+
+.interest h2 {
+    color: #85BAA1;
+}
+
+.interest p {
+    color: #CEEDDB;
+}
+
+/* Responsive design for interest items */
 @media (max-width: 768px) {
-    #contact form {
+    .interest {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .interest img {
+        margin-bottom: 1rem;
     }
 }
