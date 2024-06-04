@@ -98,6 +98,48 @@ footer div a:hover {
     }
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes createBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }}
+
+#Projects .heading1 {
+    animation: fadeIn 2s;
+    animation-timing-function: ease-in;
+      }
+
+.project img{
+    animation-name: createBox;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+.project-details p{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+.project-details a{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+.project-details h2{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
 #about-me .about-me-content {
     display: flex;
     align-items: center;
@@ -110,6 +152,24 @@ footer div a:hover {
     margin-right: 20px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.heading1 {
+    animation: fadeIn 2s;
+    animation-timing-function: ease-in;
+  }
+
+.about-me-content img{
+    animation-name: createBox;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+.about-me-content p{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
 }
 
 #about-me p {
@@ -273,6 +333,30 @@ footer div a:hover {
 .interest p {
     color: #CEEDDB;
 }
+
+#Interests .heading1 {
+    animation: fadeIn 2s;
+    animation-timing-function: ease-in;
+      }
+
+.interest img{
+    animation-name: createBox;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    }
+    
+.interest-details p{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    }
+
+.interest-details h2{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    }
+
 
 /* Responsive design for interest items */
 @media (max-width: 768px) {
